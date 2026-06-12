@@ -1,8 +1,5 @@
 #!/bin/sh
-
-echo "================================="
-echo "Bonjour Pascal !"
-echo "Le pipeline Jenkins fonctionne."
-echo "Utilisateur : $(whoami)"
-echo "Date : $(date)"
-echo "================================="
+echo "Bonjour Pascal"
+echo "Pipeline Jenkins OK"
+date
+whoami

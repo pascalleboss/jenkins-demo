@@ -2,10 +2,9 @@ pipeline {
     agent any
 
     stages {
-
         stage('Checkout') {
             steps {
-                echo '📥 Code récupéré depuis GitHub'
+                echo 'Code récupéré depuis GitHub'
             }
         }
 
@@ -24,7 +23,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo '🚀 Déploiement simulé'
+                echo 'Déploiement simulé'
             }
         }
     }
