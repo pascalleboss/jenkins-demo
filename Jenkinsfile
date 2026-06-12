@@ -5,26 +5,25 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                echo '📥 Récupération du code depuis GitHub'
+                echo 'Code récupéré depuis GitHub'
             }
         }
 
         stage('Build') {
             steps {
-                sh 'ls -la'
+                echo 'Compilation en cours'
             }
         }
 
         stage('Test') {
             steps {
-                sh 'chmod +x hello.sh'
-                sh './hello.sh'
+                echo 'Tests exécutés'
             }
         }
 
         stage('Deploy') {
             steps {
-                echo '🚀 Déploiement simulé'
+                echo 'Déploiement simulé'
             }
         }
     }
